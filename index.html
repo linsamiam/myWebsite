@@ -4,14 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Samuel Lin (Page in Progress) | Compassionate & Skilled Physician</title>
+  <title>Dr. Samuel Lin | Compassionate & Competent Physician</title>
   <style>
+    :root {
+      --color-primary: #005a87;
+      --color-background: #ffffff;
+      --color-text: #333;
+      --spacing-lg: 48px;
+      --spacing-md: 32px;
+      --spacing-sm: 16px;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
     }
 
     .parallax {
@@ -24,38 +34,70 @@
     }
 
     header {
-      background-color: #005a87;
+      background-color: var(--color-primary);
       color: white;
-      padding: 2rem;
-      text-align: center;
+      padding: var(--spacing-lg) var(--spacing-sm);
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 var(--spacing-sm) 0;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin: 0;
     }
 
     section {
-      padding: 2rem;
+      padding: var(--spacing-lg) var(--spacing-sm);
       max-width: 900px;
       margin: auto;
     }
 
+    h2 {
+      font-size: 2rem;
+      margin-bottom: var(--spacing-sm);
+      border-bottom: 2px solid var(--color-primary);
+      padding-bottom: var(--spacing-sm);
+    }
+
+    ul {
+      padding-left: var(--spacing-md);
+    }
+
+    li {
+      margin-bottom: var(--spacing-sm);
+    }
+
     .highlight {
-      color: #005a87;
+      color: var(--color-primary);
       font-weight: bold;
     }
 
     footer {
-      background-color: #005a87;
+      background-color: var(--color-primary);
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+      padding: var(--spacing-md) var(--spacing-sm);
     }
 
     .profile-pic {
       display: block;
-      margin: 2rem auto 1rem;
-      max-width: 500px;
+      margin: var(--spacing-lg) auto;
+      max-width: 700px;
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid var(--color-primary);
+      padding-left: var(--spacing-sm);
+      margin-left: 0;
+      color: #444;
     }
   </style>
 </head>
@@ -63,7 +105,7 @@
 <body>
   <header>
     <h1>Dr. Samuel Lin (Page in Progress)</h1>
-    <p>Compassionate. Knowledgeable. Dedicated.</p>
+    <p>Compassionate • Competent • Responsible</p>
   </header>
 
   <div class="parallax"></div>
@@ -75,36 +117,31 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I'm Dr. Samuel Lin, a medical student at Loma Linda University School of Medicine. I strive to impact my community through clinical research,
-      medical outreach, and patient advocacy. I am passionate about building a resilient, spiritually strong student body and improving patient care
-      through ultrasound and evidence-based medicine.
+      I’m a medical student at Loma Linda University School of Medicine who hopes to serve as a physician defined by clinical excellence, compassion, and unwavering commitment. I bring together experience in research, education, wellness leadership, and service. My passion is to care for patients with empathy, curiosity, and purpose.
     </p>
   </section>
 
   <section>
     <h2>Experience Highlights</h2>
     <ul>
-      <li><span class="highlight">Resilience Committee Chair:</span> Leading three subcommittees to strengthen LLU's student body through education, events, and outcomes research.</li>
-      <li><span class="highlight">McPherson Clinical Research Scientist:</span> Published and award-winning research in testicular torsion and prenatal urologic risk prediction.</li>
-      <li><span class="highlight">Ultrasound Interest Group President:</span> Oversaw events serving 1000+ students, teaching practical clinical ultrasound.</li>
-      <li><span class="highlight">Missions Interest Group Secretary:</span> Supporting medical student outreach through mission opportunities and coordination.</li>
-      <li><span class="highlight">Basic Science Researcher:</span> Contributed to multiple publications on cancer immunology and regulatory cell signaling at UC Riverside.</li>
+      <li><span class="highlight">Resilience Committee Chair:</span> Led 3 subcommittees to support student mental, spiritual, and emotional well-being.</li>
+      <li><span class="highlight">McPherson Research Scientist:</span> Conducted outcomes research in pediatric urology; multiple awards and accepted abstracts.</li>
+      <li><span class="highlight">Ultrasound Interest Group President:</span> Directed one of the nation’s largest ultrasound interest groups, serving 1000+ students.</li>
+      <li><span class="highlight">Basic Science Researcher (UCR):</span> Authored peer-reviewed publications in breast cancer signaling and immunology.</li>
     </ul>
   </section>
 
   <section>
     <h2>Publications & Awards</h2>
     <ul>
-      <li><span class="highlight">Publications:</span> Topics include prolactin in breast cancer, arginine metabolism, ultrasound predictors of PUV, and testicular torsion outcomes.</li>
-      <li><span class="highlight">Awards:</span>
+      <li><strong>Publications:</strong> Prolactin signaling in breast cancer, immune escape via arginine metabolism, and risk factor prediction in pediatric urology.</li>
+      <li><strong>Key Honors:</strong>
         <ul>
-          <li><strong>Quest for Excellence Award</strong> – Celebrates a student committed to growth—not only in academics but in life—who has been a quiet force for wellness and wholeness, both personally and within the student community.</li>
-          <li><strong>2024–2025 Professionalism Commendation</strong> – Recognized for exceptional professionalism at biannual professionalism events.</li>
-          <li><strong>WAFMR Student Subspecialty Award</strong> – Awarded for a top scoring abstract on testicular torsion viability at the 2024 conference.</li>
-          <li><strong>WSPR Trainee Nomination</strong> – Western Society for Pediatric Research, Oct 2024.</li>
-          <li><strong>LCME Representative</strong> – Chosen as one of 12 students to represent the pre-clinical cohort to the LCME accreditation committee.</li>
-          <li><strong>Summa Cum Laude</strong> – Graduated top 2% with ≥3.95 GPA from UC Riverside.</li>
-          <li><strong>Exemplary Service Award</strong> – Recognized by COPE Health Scholars for responsibility, attitude, and work ethic.</li>
+          <li><strong>Quest for Excellence Award</strong> – Recognized for personal and community growth.</li>
+          <li><strong>Professionalism Commendation</strong> – Honored for consistent professional behavior.</li>
+          <li><strong>WAFMR Abstract Award</strong> – Top abstract in student research competition.</li>
+          <li><strong>WSPR Nominee</strong> – Nominated to represent pediatric research regionally.</li>
+          <li><strong>LCME Student Rep</strong> – Selected as 1 of 12 students to represent LLUSOM for accreditation.</li>
         </ul>
       </li>
     </ul>
@@ -120,11 +157,11 @@
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:samueljlin71@gmail.com">samueljlin71@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/samuel-lin-llu" target="_blank">Samuel Lin, MD Candidate</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/samuel-lin-llu" target="_blank">linkedin.com/in/samuel-lin-llu</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dr. Samuel Lin | All rights reserved</p>
+    <p>&copy; 2025 Dr. Samuel Lin | Built with purpose and humility</p>
   </footer>
 </body>
 
